@@ -9,6 +9,9 @@ const config: PlaywrightTestConfig = {
         video: "retain-on-failure",
         baseURL: "http://uitestingplayground.com",
         browserName: 'chromium',
+        launchOptions: {
+            executablePath: '/usr/local/bin/chromium',
+        },
 
     },
     reporter: [

@@ -10,6 +10,9 @@ const config: PlaywrightTestConfig = {
         baseURL: "https://www.saucedemo.com/",
         browserName: 'chromium',
         colorScheme: "dark",
+        launchOptions: {
+            executablePath: '/usr/local/bin/chromium',
+        },
     },
 
     reporter: [
