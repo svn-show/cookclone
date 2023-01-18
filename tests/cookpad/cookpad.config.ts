@@ -6,9 +6,9 @@ const config: PlaywrightTestConfig = {
 
     use: {
         headless: false,
-        screenshot: "only-on-failure",
-        video: "retain-on-failure",
-        baseURL: "http://uitestingplayground.com",
+        // screenshot: "only-on-failure",
+        // video: "retain-on-failure",
+        baseURL: "http://cookpad.com",
         browserName: 'chromium',
         launchOptions: {
             executablePath: '/usr/local/bin/chromium',
@@ -17,11 +17,11 @@ const config: PlaywrightTestConfig = {
     },
     reporter: [
         ['list'],
-        ['experimental-allure-playwright']
+        // ['experimental-allure-playwright']
     ],
-    grepInvert: [new RegExp("@flaky")],
+    // grepInvert: [new RegExp("@flaky")],
     workers: 2,
-    preserveOutput: "failures-only",
+    // preserveOutput: "failures-only",
 
 };
 
